@@ -13,6 +13,10 @@ all :
 	@make javascript
 	@echo "\n${YELLOW}-- Let's run from Python! --${NC}"
 	@make python
+	@echo "\n${YELLOW}-- Let's run from Ruby! --${NC}"
+	@make ruby
+	@echo "\n${YELLOW}-- Let's run from Perl! --${NC}"
+	@make perl
 	@echo "\n${YELLOW}-- Let's run from Java! --${NC}"
 	@make java
 	@echo "\n${YELLOW}-- Let's run from Go! --${NC}"
@@ -53,6 +57,12 @@ endif
 
 python :
 	@python3 hello.py
+
+ruby :
+	@ruby hello.rb
+
+perl :
+	@perl hello.pl
 
 go :
 	@go run hello.go
