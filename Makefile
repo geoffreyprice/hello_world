@@ -36,18 +36,20 @@ endif
 cpp :
 ifndef GPP
 	@echo "${RED}g++ is not available. Please install g++${NC}"
-endif
+else
 	@g++ -o hello hello.cpp
 	@./hello
 	@rm hello
+endif
 
 java :
 ifndef JAVA
 	@echo "${RED}Java is not available. Please install Java${NC}"
-endif
+else
 	@javac hello.java
 	@java HelloWorld
 	@rm HelloWorld.class
+endif
 
 python :
 	@python3 hello.py
